@@ -4,14 +4,26 @@ import * as ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import Landing from './routes/landing'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Landing/>,
+  },
+]);
 
 root.render(
   <StrictMode>
     <ColorModeScript />
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>
 );
 

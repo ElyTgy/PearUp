@@ -1,10 +1,11 @@
-import logo from "../images/logo.png"
+import logo from "../images/profile.webp"
 import {
   ChakraProvider,
   Box,
   Flex,
   Heading,
   Text,
+  HStack,
   Link,
   Button,
   Image,
@@ -16,7 +17,19 @@ export default function Profile() {
     return (
       <>
         <ChakraProvider theme={theme}>
-          <Text>hi!</Text>
+          <Flex>
+            <Flex direction="row" m={7}>
+                <Image src={logo} borderRadius='full' w="30%"/>
+                <Flex ml={5} w="100%" direction="column" justifyContent="center">
+                    <Heading>Ellie Taghavi</Heading>
+                    <HStack>
+                        <Text>16</Text>
+                        <Text>She/Her</Text>
+                        <Text>Canada</Text>
+                    </HStack>
+                </Flex>
+            </Flex>
+          </Flex>
         </ChakraProvider>
       </>
     );

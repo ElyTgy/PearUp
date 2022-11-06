@@ -11,6 +11,7 @@ import {
 
 import Landing from './routes/landing'
 import Profile from './routes/profile'
+import Match from './routes/match'
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -20,9 +21,12 @@ const router = createBrowserRouter([
     element: <Landing/>,
   },
   {
-    path: "/user/elytgy",
+    path: "/pear/elytgy",
     element: <Profile/>
-
+  },
+  {
+    path: "/match",
+    element: <Match/>
   }
 ]);
 

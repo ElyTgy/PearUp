@@ -20,9 +20,9 @@ export default function Landing() {
             <Heading colorScheme='brand' fontSize="60px">Pear Up!</Heading>
             <Image w="75%" py={5} src={logo}/>
             <Button m={2} bg='brand.100'>
-              <Link to="/user/elytgy">Log In</Link>
+              <Link to="/pear/elytgy">Log In</Link>
             </Button>
-            <Button to="user/elytgy" bg='brand.100'>
+            <Button to="pear/elytgy" bg='brand.100'>
               <Link to={Profile}>Sign Up</Link>
             </Button>
           </Flex>

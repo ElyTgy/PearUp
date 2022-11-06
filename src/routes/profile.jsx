@@ -29,6 +29,9 @@ export default function Profile() {
                     </HStack>
                 </Flex>
             </Flex>
+            <Flex>
+                <Text>Hello </Text>
+            </Flex>
           </Flex>
         </ChakraProvider>
       </>

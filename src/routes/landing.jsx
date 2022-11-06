@@ -1,4 +1,3 @@
-import React from 'react';
 import logo from "../images/logo.jpeg"
 import {
   ChakraProvider,
@@ -13,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 
 
-export default function Root() {
+export default function Landing() {
     return (
       <>
         <ChakraProvider theme={theme}>

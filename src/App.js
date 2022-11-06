@@ -1,12 +1,14 @@
 import React from 'react';
+import logo from "./images/logo.jpeg"
 import {
   ChakraProvider,
   Box,
+  Flex,
+  Heading,
   Text,
   Link,
-  VStack,
-  Code,
-  Grid,
+  Button,
+  Image,
   theme,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
@@ -15,26 +17,12 @@ import { Logo } from './Logo';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
-      </Box>
+      <Flex h='calc(100vh)' w='calc(100vw)' flexDirection="column" justifyContent="center" alignItems="center">
+        <Heading fontSize="60px">Pear Up!</Heading>
+        <Image src={logo}/>
+        <Button m={2} colorScheme='blue'>Log In</Button>
+        <Button colorScheme='blue'>Sign Up</Button>
+      </Flex>
     </ChakraProvider>
   );
 }

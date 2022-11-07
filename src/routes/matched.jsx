@@ -23,7 +23,7 @@ import SearchBar2 from "../components/searchBar2";
 const categoryData = ['Language','Music','Creative','Academic', 'Wellness'];
 const interestData = {
     Language: ['English', 'Mandarin', 'Korean', 'Japanese', 'French'],
-    Music: ['piano', 'harps', 'violets','guitar'],
+    Music: ['piano', 'harps', 'violin','guitar'],
     Creative: ['UX Design', 'Web Development', 'Creative Writing'],
     Academic: ['Math', 'Statistic', 'Law'],
     Wellness: ['Yoga', 'Meditation', 'Breathing Exercises']
@@ -55,7 +55,7 @@ const Matched = (props) => {
             paddingTop="50"
             avatar={<Avatar src="https://joeschmoe.io/api/v1/Peter"/>}
             title="Alice"
-            description="My main skill set is Korean, the violets, law, and breathing exercises"
+            description="My main skill set is Korean, the violin, law, and breathing exercises"
             />
             <MatchedProfile 
             avatar={<Avatar src="https://joeschmoe.io/api/v1/Bob"/>}

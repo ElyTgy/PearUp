@@ -22,7 +22,7 @@ import Matched from "../routes/matched";
 const categoryData = ['Language','Music','Creative','Academic', 'Wellness'];
 const interestData = {
     Language: ['English', 'Mandarin', 'Korean', 'Japanese', 'French'],
-    Music: ['piano', 'harps', 'violets','guitar'],
+    Music: ['piano', 'harps', 'violin','guitar'],
     Creative: ['UX Design', 'Web Development', 'Creative Writing'],
     Academic: ['Math', 'Statistic', 'Law'],
     Wellness: ['Yoga', 'Meditation', 'Breathing Exercises']

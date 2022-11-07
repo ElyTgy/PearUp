@@ -8,6 +8,7 @@ import {
   Button,
   Image,
   Center,
+  background,
 } from '@chakra-ui/react';
 import {Link} from "react-router-dom";
 import Profile from "../routes/profile"
@@ -30,10 +31,19 @@ const MatchedProfile = (props) => {
             width: 550,
             marginTop: 16,
             marginLeft: "auto",
-            marginRight: "auto"
+            marginRight: "auto",
+            background:"#72b01d"
           }}
+
+          bodyStyle={
+              {
+                  color:"#72b01d",
+                  background:"#e0f5c3"
+              }
+          }
           actions={[
-            <MailOutlined key="mail" />,
+            <MailOutlined 
+            key="mail" />,
             <LikeOutlined key="like"/>,
             <EllipsisOutlined key="ellipsis" />,
           ]}

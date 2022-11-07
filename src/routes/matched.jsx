@@ -12,13 +12,13 @@ import {
 import {Link} from "react-router-dom";
 import Profile from "./profile"
 import {theme} from "../theme"
-import SearchBar from "../components/searchBar";
 import MatchedProfile from "../components/matchedProfile";
 
 import { Avatar, Card, Skeleton, Switch } from 'antd';
 import { Select } from 'antd';
 import React, { useState } from 'react';
 import 'antd/dist/antd.css';
+import SearchBar2 from "../components/searchBar2";
 const categoryData = ['Language','Music','Creative','Academic', 'Wellness'];
 const interestData = {
     Language: ['English', 'Mandarin', 'Korean', 'Japanese', 'French'],
@@ -35,11 +35,17 @@ const Matched = (props) => {
   return (
     <>
     <ChakraProvider theme={theme}>
-        <Flex align="center" justify="center" paddingTop="30">
-        <SearchBar />
+        <Flex bg='#fcf2eb' align="center" justify="center" paddingTop="30" paddingBottom="50">
+        <SearchBar2 />
         </Flex>
-        <div style={{width: '100%'}}>
+        <div style={{
+            width: '100%',
+            color:'#fcf2eb',
+            backgroundColor:'#fcf2eb',
+            background:'#fcf2eb'
+            }}>
         <MatchedProfile 
+            paddingTop="50"
             avatar={<Avatar src="https://joeschmoe.io/api/v1/Peter"/>}
             title="Alice"
             description="My main skill set is Korean, the violets, law, and breathing exercises"

@@ -1,4 +1,5 @@
 import logo from "../images/logo.png"
+import double_pear from "../images/double_pear.png"
 import {
   ChakraProvider,
   Box,
@@ -8,6 +9,7 @@ import {
   Button,
   Image,
   Center,
+  color,
 } from '@chakra-ui/react';
 import {Link} from "react-router-dom";
 import {theme} from "../theme"
@@ -26,7 +28,7 @@ const interestData = {
     Wellness: ['Yoga', 'Meditation', 'Breathing Exercises']
 };
 
-const SearchBar = () => {
+const SearchBar2 = () => {
   const [category, setCategory] = useState(interestData[categoryData[0]]);
   const [interests, setInterest] = useState(interestData[categoryData[0]][0]);
   const handleCategoryChange = (value) => {
@@ -39,15 +41,22 @@ const SearchBar = () => {
   return (
     <>
     <ChakraProvider theme={theme}>
-        <Flex align="center" justify="center" paddingTop="70">
-        <Image src={logo} borderRadius='full' w="3%"/>
-        <Select
+        <Flex  bg='#fcf2eb' align="center" justify="center" paddingTop="30">
+        <Image src={double_pear} borderRadius='full' w="5%"/>
+        <Select 
             defaultValue={categoryData[0]}
             style={{
             width: 200,
+            height:30,
             backgroundColor: "#72b01d",
-            textalign: Center
+            textalign: Center,
+            borderRadius:1
             }}
+            dropdownStyle={
+                {
+                    color:"#72b01d"
+                }
+            }
             onChange={handleCategoryChange}
             options={categoryData.map((c) => ({
             label: c,
@@ -58,7 +67,8 @@ const SearchBar = () => {
             style={{
             width: 200,
             backgroundColor: "#72b01d",
-            textalign: Center
+            textalign: Center,
+            borderRadius:1
             }}
             value={interests}
             onChange={onInterestChange}
@@ -67,7 +77,7 @@ const SearchBar = () => {
             value: interest,
             }))}
         />
-        <Button to="/matched" bg="brand.100">
+        <Button paddingLeft="2"  to="/matched" bg="brand.100">
             <Link to="/matched" >Matched</Link>
         </Button>
         </Flex>
@@ -77,4 +87,4 @@ const SearchBar = () => {
     </>
   );
 };
-export default SearchBar;
+export default SearchBar2;

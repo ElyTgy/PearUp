@@ -81,7 +81,7 @@ export default function Profile() {
                     </Flex>
                 </Flex>
                 <Button w="300px" p={5} mt={20} bg='brand.100' _hover={{background: "brand.200",}}>
-                    <Link style={{color: 'black'}} to="/pear/elytgy">Log In</Link>
+                    <Link style={{color: 'black'}} to={Match}>Log In</Link>
                 </Button>
             </Flex>
           </Flex>

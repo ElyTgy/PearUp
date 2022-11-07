@@ -23,7 +23,7 @@ export default function Profile() {
       <>
         <ChakraProvider theme={theme}>
           <Flex direction="column">
-            <Flex height="350px" direction="row" pt={7} px={7} bgGradient="linear-gradient(90deg, rgba(195,255,113,1) 6%, rgba(224,245,195,1) 50%, rgba(235,250,179,1) 90%);">
+            <Flex height="350px" direction="row" pt={7} px={7} bgGradient="linear-gradient(90deg, rgba(181,205,127,1) 23%, rgba(245,250,177,1) 75%);">
                 <Image ml={10}src={logo} borderRadius='full' h="300px"/>
                 <Flex ml={70} w="100%" direction="column" justifyContent="center">
                     <Heading fontSize="3xl">Ellie Taghavi</Heading>
@@ -40,13 +40,13 @@ export default function Profile() {
                     <Flex align="center" direction="column">
                         <Heading pt={5} fontSize="2xl" alignSelf="start">Interests</Heading>
                         <Flex direction="row" w="90%" justify="space-evenly">
-                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            <Button p={5} m={2} bg='brand.200' _hover={{background: "brand.200",}}>
                             ants
                             </Button>
-                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            <Button p={5} m={2} bg='brand.200' _hover={{background: "brand.200",}}>
                             eating
                             </Button>
-                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            <Button p={5} m={2} bg='brand.200' _hover={{background: "brand.200",}}>
                             ur mom
                             </Button>
                         </Flex>
@@ -54,13 +54,13 @@ export default function Profile() {
                     <Flex align="center" direction="column">
                         <Heading pt={5} fontSize="2xl" alignSelf="start">Skills</Heading>
                         <Flex direction="row" w="90%" justify="space-evenly">
-                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            <Button p={5} m={2} bg='brand.200' _hover={{background: "brand.200",}}>
                             coding
                             </Button>
-                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            <Button p={5} m={2} bg='brand.200' _hover={{background: "brand.200",}}>
                             harp
                             </Button>
-                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            <Button p={5} m={2} bg='brand.200' _hover={{background: "brand.200",}}>
                             english
                             </Button>
                         </Flex>
@@ -68,19 +68,19 @@ export default function Profile() {
                     <Flex align="center" direction="column">
                         <Heading pt={5} fontSize="2xl" alignSelf="start">To learn</Heading>
                         <Flex direction="row" w="90%" justify="space-evenly">
-                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            <Button p={5} m={2} bg='brand.200' _hover={{background: "brand.200",}}>
                             piano
                             </Button>
-                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            <Button p={5} m={2} bg='brand.200' _hover={{background: "brand.200",}}>
                             biology
                             </Button>
-                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            <Button p={5} m={2} bg='brand.200' _hover={{background: "brand.200",}}>
                             art
                             </Button>
                         </Flex>
                     </Flex>
                 </Flex>
-                <Button w="300px" p={5} mt={20} bg='brand.100' _hover={{background: "brand.200",}}>
+                <Button w="300px" p={5} mt={20} bg='brand.200' _hover={{background: "brand.200",}}>
                     <Link style={{color: 'black'}} to="/match">Pear Up!</Link>
                 </Button>
             </Flex>

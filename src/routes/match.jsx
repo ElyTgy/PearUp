@@ -12,38 +12,11 @@ import {
 import {Link} from "react-router-dom";
 import Profile from "./profile"
 import {theme} from "../theme"
-// import { Select } from '@chakra-ui/react'
-
-// export default function Profile() {
-//     return (
-//       <>
-//         <ChakraProvider theme={theme}>
-//           <Flex>
-//             <Select placeholder='Select option'>
-//             <option value='option1'>Languages</option>
-//             <option value='option2'>Option 2</option>
-//             <option value='option3'>Option 3</option>
-//             </Select>
-//             <Flex direction="row" m={7}>
-//                 <Image src={logo} borderRadius='full' w="30%"/>
-//                 <Flex ml={5} w="100%" direction="column" justifyContent="center">
-//                     <Heading>Ellie Taghavi</Heading>
-//                     <HStack>
-//                         <Text>16</Text>
-//                         <Text>She/Her</Text>
-//                         <Text>Canada</Text>
-//                     </HStack>
-//                 </Flex>
-//             </Flex>
-//           </Flex>
-//         </ChakraProvider>
-//       </>
-//     );
-//   }
-
+import SearchBar from "../components/searchBar1";
 import { Select } from 'antd';
 import React, { useState } from 'react';
 import 'antd/dist/antd.css';
+import SearchBar1 from "../components/searchBar1";
 const categoryData = ['Language','Music','Creative','Academic', 'Wellness'];
 const interestData = {
     Language: ['English', 'Mandarin', 'Korean', 'Japanese', 'French'],
@@ -65,39 +38,17 @@ const Match = () => {
   };
   return (
     <>
-    <ChakraProvider theme={theme}>
-        <Flex>
-        <Image src={logo} borderRadius='full' w="3%"/>
-        <Select
-            defaultValue={categoryData[0]}
-            style={{
-            width: 200,
-            backgroundColor: "#72b01d",
-            textalign: Center
-            }}
-            onChange={handleCategoryChange}
-            options={categoryData.map((c) => ({
-            label: c,
-            value: c,
-            }))}
-        />
-        <Select
-            style={{
-            width: 200,
-            backgroundColor: "#72b01d",
-            textalign: Center
-            }}
-            value={interests}
-            onChange={onInterestChange}
-            options={category.map((interest) => ({
-            label: interest,
-            value: interest,
-            }))}
-        />
-        <Button bg="brand.100">Match</Button>
-        </Flex>
+
+    <ChakraProvider bg="#fcf2eb" theme={theme}>
+        <Box bg="#fcf2eb">
+            <Flex bg="#fcf2eb" align="center" justify="center" paddingTop="350" paddingBottom="700">
+            <SearchBar1 />
+            </Flex>
+        </Box>
+
         
     </ChakraProvider>
+
       
     </>
   );

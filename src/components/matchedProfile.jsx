@@ -29,10 +29,10 @@ const MatchedProfile = (props) => {
         <Card
           style={{
             width: 550,
-            marginTop: 16,
+            paddingTop: 16,
             marginLeft: "auto",
             marginRight: "auto",
-            background:"#72b01d"
+            background:"#fcf2eb"
           }}
 
           bodyStyle={

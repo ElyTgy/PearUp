@@ -42,7 +42,7 @@ const SearchBar1 = () => {
     <>
     <ChakraProvider theme={theme}>
         <Flex  bg='#fcf2eb' align="center" justify="center" paddingTop="30">
-        <Image src={single_pear} borderRadius='full' w="5%"/>
+        <Image src={single_pear} borderRadius='full' w="5%" style={{zIndex: "2"}} />
         <Select 
             defaultValue={categoryData[0]}
             style={{

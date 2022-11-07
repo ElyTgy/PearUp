@@ -29,8 +29,8 @@ const interestData = {
 };
 
 const SearchBar2 = () => {
-  const [category, setCategory] = useState(interestData[categoryData[0]]);
-  const [interests, setInterest] = useState(interestData[categoryData[0]][0]);
+  const [category, setCategory] = useState(interestData[categoryData[1]]);
+  const [interests, setInterest] = useState(interestData[categoryData[1]][2]);
   const handleCategoryChange = (value) => {
     setCategory(interestData[value]);
     setInterest(interestData[value][0]);
@@ -44,7 +44,7 @@ const SearchBar2 = () => {
         <Flex  bg='#fcf2eb' align="center" justify="center" paddingTop="30">
         <Image src={double_pear} borderRadius='full' w="5%"/>
         <Select 
-            defaultValue={categoryData[0]}
+            defaultValue={categoryData[1]}
             style={{
             width: 200,
             height:30,

@@ -1,4 +1,5 @@
 import logo from "../images/logo.png"
+import background from "../images/background.png"
 import {
   ChakraProvider,
   Box,
@@ -35,6 +36,12 @@ const Matched = (props) => {
   return (
     <>
     <ChakraProvider theme={theme}>
+    <img src={background} alt="" style={{
+            position: 'absolute',
+            width:"100%",
+            height:"100%",
+            pointerEvents: "none"
+        }} />
         <Flex bg='#fcf2eb' align="center" justify="center" paddingTop="30" paddingBottom="50">
         <SearchBar2 />
         </Flex>

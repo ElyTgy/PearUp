@@ -12,6 +12,7 @@ import {
 import {Link} from "react-router-dom";
 import Profile from "./profile"
 import {theme} from "../theme"
+import SearchBar from "../components/searchBar";
 // import { Select } from '@chakra-ui/react'
 
 // export default function Profile() {
@@ -66,35 +67,8 @@ const Match = () => {
   return (
     <>
     <ChakraProvider theme={theme}>
-        <Flex>
-        <Image src={logo} borderRadius='full' w="3%"/>
-        <Select
-            defaultValue={categoryData[0]}
-            style={{
-            width: 200,
-            backgroundColor: "#72b01d",
-            textalign: Center
-            }}
-            onChange={handleCategoryChange}
-            options={categoryData.map((c) => ({
-            label: c,
-            value: c,
-            }))}
-        />
-        <Select
-            style={{
-            width: 200,
-            backgroundColor: "#72b01d",
-            textalign: Center
-            }}
-            value={interests}
-            onChange={onInterestChange}
-            options={category.map((interest) => ({
-            label: interest,
-            value: interest,
-            }))}
-        />
-        <Button bg="brand.100">Match</Button>
+        <Flex align="center" justify="center" paddingTop="50">
+        <SearchBar />
         </Flex>
         
     </ChakraProvider>

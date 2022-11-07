@@ -1,4 +1,4 @@
-import logo from "../images/profile.webp"
+import logo from "../images/profile.png"
 import {
   ChakraProvider,
   Box,
@@ -9,54 +9,80 @@ import {
   Link,
   Button,
   Image,
-  theme,
 } from '@chakra-ui/react';
 
+import {theme} from "../theme"
+import '@fontsource/inconsolata/600.css'
+import '@fontsource/cabin/latin-700.css'
+import banner from "../images/banner.png"
+
+const bio = "Hi, I am Ellie who is in the Senior year of High School. I am preparing for my college application and I want to take on more learning experiences. I love music and I am currently the president of girls in STEM at my school. I am excited to get peared up to learn more about college level calculus."
 
 export default function Profile() {
     return (
       <>
         <ChakraProvider theme={theme}>
           <Flex direction="column">
-            <Flex direction="row" m={7}>
-                <Image src={logo} borderRadius='full' w="30%"/>
-                <Flex ml={5} w="100%" direction="column" justifyContent="center">
-                    <Heading>Ellie Taghavi</Heading>
-                    <HStack>
-                        <Text>16</Text>
-                        <Text>She/Her</Text>
+            <Flex height="350px" direction="row" pt={7} px={7} bgGradient="linear-gradient(90deg, rgba(195,255,113,1) 6%, rgba(224,245,195,1) 50%, rgba(235,250,179,1) 90%);">
+                <Image ml={10}src={logo} borderRadius='full' h="300px"/>
+                <Flex ml={70} w="100%" direction="column" justifyContent="center">
+                    <Heading fontSize="3xl">Ellie Taghavi</Heading>
+                    <HStack fontSize='lg'>
+                        <Text>16  • </Text>
+                        <Text>She/Her • </Text>
                         <Text>Canada</Text>
                     </HStack>
                 </Flex>
             </Flex>
-            <Flex direction="column" align="flex-start" w="100%">
-                <Text w="100%">Hello! Pls be my friends im lonely</Text>
-                <Flex w="100%" direction="column" justify="flex-start">
+            <Flex  py={10} px={20} h='calc(100vh)' bg="#FCF2EB" direction="column" align="center">
+                <Text maxW="1000px" fontSize='md' bg="#f5fab1" p={8} w="100%" >{bio}</Text>
+                <Flex maxW="1000px" bg="#f5fab1" pb={5} px={10} mt={8} w="100%" direction="column" justify="flex-start">
                     <Flex align="center" direction="column">
-                        <Text alignSelf="start">Interests</Text>
-                        <Flex direction="row">
-                            <Button>ants</Button>
-                            <Button>eating</Button>
-                            <Button>ur mom</Button>
+                        <Heading pt={5} fontSize="2xl" alignSelf="start">Interests</Heading>
+                        <Flex direction="row" w="90%" justify="space-evenly">
+                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            ants
+                            </Button>
+                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            eating
+                            </Button>
+                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            ur mom
+                            </Button>
                         </Flex>
                     </Flex>
                     <Flex align="center" direction="column">
-                        <Text alignSelf="start">Skills</Text>
-                        <Flex direction="row">
-                            <Button>coding</Button>
-                            <Button>harp</Button>
-                            <Button>english</Button>
+                        <Heading pt={5} fontSize="2xl" alignSelf="start">Skills</Heading>
+                        <Flex direction="row" w="90%" justify="space-evenly">
+                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            coding
+                            </Button>
+                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            harp
+                            </Button>
+                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            english
+                            </Button>
                         </Flex>
                     </Flex>
                     <Flex align="center" direction="column">
-                        <Text alignSelf="start">To learn</Text>
-                        <Flex direction="row">
-                            <Button>piano</Button>
-                            <Button>biology</Button>
-                            <Button>art</Button>
+                        <Heading pt={5} fontSize="2xl" alignSelf="start">To learn</Heading>
+                        <Flex direction="row" w="90%" justify="space-evenly">
+                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            piano
+                            </Button>
+                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            biology
+                            </Button>
+                            <Button p={5} m={2} bg='brand.100' _hover={{background: "brand.200",}}>
+                            art
+                            </Button>
                         </Flex>
                     </Flex>
                 </Flex>
+            <Button p={5} mt={20} bg='brand.100' _hover={{background: "brand.200",}}>
+                            match!
+                            </Button>
             </Flex>
           </Flex>
         </ChakraProvider>

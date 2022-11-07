@@ -14,7 +14,7 @@ import {theme} from "../theme"
 import '@fontsource/inconsolata/600.css'
 import '@fontsource/cabin/latin-700.css'
 import {Link} from "react-router-dom";
-import Match from "../routes/match"
+import Match from "../routes/match.jsx"
 
 const bio = "Hi, I am Ellie who is in the Senior year of High School. I am preparing for my college application and I want to take on more learning experiences. I love music and I am currently the president of girls in STEM at my school. I am excited to get peared up to learn more about college level calculus."
 
@@ -81,7 +81,7 @@ export default function Profile() {
                     </Flex>
                 </Flex>
                 <Button w="300px" p={5} mt={20} bg='brand.100' _hover={{background: "brand.200",}}>
-                    <Link style={{color: 'black'}} to={Match}>Log In</Link>
+                    <Link style={{color: 'black'}} to="/match">Pear Up!</Link>
                 </Button>
             </Flex>
           </Flex>
